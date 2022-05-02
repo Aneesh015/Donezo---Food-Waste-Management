@@ -1,0 +1,149 @@
+
+body{
+padding: 10px;
+  margin: 0;
+  background-size: 100%;
+  background-color: #C0C0C0 ;
+}
+img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+.main{
+    width:800px;
+    margin:100px auto 0px auto;
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Orbitron', sans-serif;
+    color:white;
+    font-stretch: extra-expanded;
+}
+
+div.register{
+    background-color: rgb(0,0,0,0.5);
+    width:100%;
+    font-size:20px;
+    border-radius: 10px;
+    border: 1px soid rgb(255,255,255,0.3);
+    box-shadow: 2px,2px,15px rgb(0,0,0,0.3);
+}
+
+
+#register{
+    margin:40px;
+}
+
+label{
+    font-family: 'Quicksand', sans-serif;;
+    color: white;
+    
+}
+
+span{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    
+}
+
+input.name{
+    width:600px;
+    border: 1px solid #ddd;
+    border-radius:  10px;
+    padding:10px;
+
+}
+#globe {
+    width:70px;
+    height: 70px;
+    font-size: 60px;
+    margin: 10PX;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  
+  }
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.btn1{
+    margin: 10%;
+    text-align: center
+}
+.mybttn{
+    font: 'Orbitron', sans-serif;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    height: 50px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.mybttn:hover {
+    background-position: 100% 0;
+   -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.btn-hover:focus {
+    outline: none;
+}
+.mybttn.b1{
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+input#birthday{
+    
+    width:350px;
+    border-radius: 10px;
+    padding: 5px;
+}
+#actual-btn{
+    background-image: linear-gradient(to right, #f089b2, #e79c81);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+  padding: 0.5rem;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  opacity:0.8;
+  
+  
+}
+#actual-btn:hover{
+    color: rgba(17, 17, 17, 0.8);
+    background-color: orange;
+}
+#new{
+padding:20px;
+}
+#states{
+    width:600px;
+    border: 1px solid #ddd;
+    border-radius:  10px;
+    padding:10px;
+}
+
+.formerror{
+    color:red;
+
+}

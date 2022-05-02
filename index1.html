@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <title>DONEZO</title>
+    <link rel="shortcut icon" href="/donation.png">
+</head>
+
+<body>
+    <form action="index.html" method="GET"></form>
+    <img src="charity.jpg" class="img">
+    <div class="quote">
+        <header>“The difference between what we do and what we are capable of doing would suffice to solve most of the
+            world's problems” ~Mahatma Gandhi</header>
+    </div>
+    <div class="food">
+        <div class="ftext">
+            <h1>Food</h1>
+        <h3>How many people can you feed?</h3>
+        <input type="number">
+        
+        <h3>When do you want to donate:</h3>
+        <input placeholder="Enter name."type="date">
+        <h3>Time for pickup:</h3>
+        <input type="time">
+        <h3> Food pickup address:</h3>
+        <input placeholder="Enter Address.">
+        <h3>Would You like to donate :</h3>
+        <p class="container"> Raw Food
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </p>
+        <p class="container"> Cooked Food
+            <input type="checkbox">
+            <span class="checkmark"></span>
+    </div>
+    </div>
+        <div class="money">
+            <div class="mtext">
+                <h1>Money</h1>
+                <h3>How much amount you want to help us with?</h3>
+                <input placeholder="Enter the amount in rupees." type="number" min="100" max="100000">
+                
+                <h3>Bank name:</h3>
+                <input placeholder="Enter name.">
+                <h3>Account holder name:</h3>
+                <input placeholder="Enter name.">
+                <h3>Account number:</h3>
+                <input placeholder="Account number.">
+                <h3>How would you like to proceed the transaction:</h3>
+                <p class="container"> Netbanking
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </p>
+                <p class="container"> Credit/Debit Card
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </p>
+            </div>
+        </div>
+        <button class="mybttn b1" onclick="showAlert()" id="submit">Submit</button>
+        
+    </form>                    
+</body>
+<script>
+    function showAlert() {
+      alert ("Thank you for being part of a bigger cause \nThe NGO will get back to you soon");
+    }
+    </script>
+</html>
+

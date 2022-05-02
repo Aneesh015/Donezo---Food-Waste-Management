@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="lstyle.css">
+    <link rel="shortcut icon" href="/donation.png">
+</head>
+
+<body>
+    <div class="imgBx">
+        <img src="img.jpg">
+    </div>
+    <section>
+
+        <div class="contentBx">
+            <div class="formBx">
+                <h2>Login</h2>
+                <form action="/" type="post" onsubmit="return validateSignin()" name="signIn" id="signin" method="post">
+                    <div class="inputBx">
+                        <span>Username</span>
+                        <input type="text" name="u_name" required>
+                    </div>
+                    <div class="inputBx">
+                        <span>Password</span>
+                        <input type="password" name="p_name" required>
+                    </div>
+                    <div id="errormsgs" >
+                        <span  > </span>
+                    </div>
+                    <div class="remember">
+                        <label><input type="checkbox" name="">Remember me</label>
+                    </div>
+                    <div class="inputBx">
+
+                        <a href="/PW/To.html"> <input type="submit" value=" Login" name=""></a>
+                    </div>
+                    <div class="inputBx">
+                        <p>Don't have an account? <a href="#">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+
+    function validateSignin() {
+
+        var return_val = true;
+
+
+        var name = document.forms['signIn']['u_name'].value;
+        
+        var password = document.forms['signIn']['p_name'].value;
+        alert("The entered password "+password);
+        if (name!="BMSCE" || password!="CSE") {
+          
+            document.getElementById('errormsgs').innerHTML ="Please enter the right credentials";
+				return false;
+        }
+
+        
+        return return_val;
+    }
+</script>
+
+</html>
