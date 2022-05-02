@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style_individual.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <title>Indiviual Registration</title>
+    <link rel="shortcut icon" href="/donation.png">
+</head>
+
+<body>
+    <img src="bg.jpg" alt="Girl in a jacket" class="img">
+    <header>
+        <div class='container'>
+            
+        </div>
+    </header>
+    <div class="main">
+        <div class="register">
+            <h2 class="title">Register Here</h2>
+
+
+            <form action="index1.html" type="post" onsubmit="return validateForm()" name="myForm" id="register" method="post">
+                <div id="register">
+                    <label>First name*:</label>
+                    <br>
+                    <div class="formDesign" id="fname">
+                        <input type="text" name="fname" id="f_name" placeholder="First Name" autocomplete="off"
+                            class="name">
+                        <span class="formerror"></span>
+                        <br><br>
+                    </div>
+                    <label>Last name:</label>
+                    <br>
+                    <div class="formDesign" id="lname">
+                        <input type="text" name="lname" id="l_name" placeholder="Last Name" autocomplete="off"
+                            class="name">
+                        <span class="formerror"></span>
+                        <br><br>
+                    </div>
+
+                    <label>Age*:</label>
+                    <br>
+                    <div class="formDesign" id="age">
+                        <input type="text" name="age" id="age" placeholder="Age" autocomplete="off" class="name">
+                        <span class="formerror"></span>
+                        <br><br>
+                    </div>
+
+                    <label>Email ID*:</label>
+                    <br>
+                    <div class="formDesign" id="email">
+                        <input type="email" name="email" id="e_name" placeholder="Email ID" autocomplete="off"
+                            class="name" required>
+                        <span class="formerror"></span>
+                        <br><br>
+                    </div>
+                    <label>Username:</label>
+                    <br>
+                    <div class="formDesign" id="uname">
+                    <input type="text" name="email" class="name"  placeholder="Userame" required>
+                    <span class="formerror"></span>
+                    <br><br>
+                </div>
+                <label>Password:</label>
+                    <br>
+                    <div class="formDesign" id="pswd">
+                    <input type="password" name="pswd" class="name"  placeholder="Password" required >
+                    <span class="formerror"></span>
+                    <br><br>
+                </div>
+                <label> Confirm Password:</label>
+                    <br>
+                    <div class="formDesign" id="cpswd">
+                    <input type="password" name="cpswd" class="name"  placeholder="Confirm Password" >
+                    <span class="formerror"></span>
+                    <br><br>
+                </div>
+
+
+
+                    <label>Mobile Number*:</label>
+                    <br>
+                    <div class="formDesign" id="mbno.">
+                        <input type="text" name="number" id="m_name" placeholder="Mobile Number" autocomplete="off"
+                            class="name" >
+                        <span class="formerror"></span>
+                        <br><br>
+                    </div>
+                    <label>State:</label>
+                    <br>
+                    <select id="states" name="states">
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana </option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+
+                    </select>
+
+                    <br><br>
+                    <label>Town,Street*:</label>
+                    <div class="formDesign" class="town">
+                        <input type="text" name="email" id="t_name" placeholder="Address Line 2" autocomplete="off"
+                            class="name" >
+                        <span class="formerror"></span>
+                        <br><br>
+                    </div>
+                    <label>Landmark,House/Block No.*:</label>
+                    <div class="formDesign" class="house">
+                        <input type="text" name="email" id="l_name" placeholder="Address Line 3" autocomplete="off"
+                            class="name" >
+                        <span class="formerror"></span>
+                        <br><br>
+                    </div>
+                    <label>Pincode*:</label>
+                    <br>
+                    <div class="formDesign" class="pincode">
+                        <input type="number" name="email" id="p_name" placeholder="Address Line 3" autocomplete="off"
+                            class="name" >
+                        <span class="formerror"><b></b></span>
+                        <br><br>
+                    </div>
+                    <label>Gender:</label>
+                    <br>
+                    &nbsp;&nbsp;
+                    <div class="formDesign" class="male">
+                        <input type="radio" name="gender" id="male" >
+                        <span id="male">Male</span>
+                        &nbsp;&nbsp;
+                    </div>
+                    <div class="formDesign" class="female">
+                        <input type="radio" name="gender" id="female">
+                        <span id="male">Female</span>
+
+                        <br><br>
+                    </div>
+                    <label id="help">How do you want to help us?</label>
+                    <br>
+                    &nbsp;&nbsp;
+                    <div class="formDesign" class="money">
+                        <input type="radio" name="help" id="money">
+                        <span id="money">Money</span>
+                        &nbsp;&nbsp;
+                    </div>
+                    <div class="formDesign" class="logistics">
+                        <input type="radio" name="help" id="logistics">
+                        <span id="logistics">Logistics</span>
+
+                        <br><br>
+                    </div>
+                    <label class="birth">Birthday</label>
+                    <br>
+                    <div class="formDesign" class="birthday">
+                        <input type="date" id="birthday" name="birthday">
+                        <br></br>
+                    </div>
+                    <label>Upload a documental proof :</label>
+                    <br>
+                    <div id="new">
+                        <form name="" action="" method="">
+                            <input type="file" id="actual-btn" hidden />
+                            <label for="actual-btn" id="actual-btn">Upload File</label>
+                        </form>
+                    </div>
+                    <br><br>
+                    <div class="btn1" >
+
+                        <input class="mybttn b1" type="submit" value="Register"
+                                >
+                        
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   
+</body>
+<script>
+    function setError(id, error) {
+    //sets error inside tag of id 
+    element = document.getElementById(id);
+    element.getElementsByClassName("formerror")[0].innerHTML = error;
+
+}
+
+
+function validateForm() {
+
+    console.log("AAAgaya ");
+    var return_val = true;
+
+
+    var name = document.forms['myForm']['fname'].value;
+    var mob_no= document.forms['myForm']['number'].value;
+    var age =document.forms['myForm']['age'].value;
+    var pass = document.forms['myForm']['pswd'].value;
+    var cpass = document.forms['myForm']['cpswd'].value;
+
+    if (name.length == 0 ) {    
+      
+        setError("fname", "Please enter the name");
+        return false;
+    }
+    if(name.length<=2)
+    {
+        
+        setError("fname", "The name is too short");
+        return false;
+    }
+    
+
+   if(name.length>2){
+        setError("fname", "");
+
+   }
+if(age.length==0) {
+        
+        setError("age", "Please enter age");
+        return false;
+    }
+ 
+    if(age.length!=0) {
+        
+        setError("age", "");
+       
+    }
+
+    if(pass!=cpass){
+            setError("cpswd","The entered password is not matching");
+            return false;
+        }
+
+        if(pass==cpass){
+            setError("cpswd","");
+        }
+    
+    if (mob_no.length==0) {
+        
+        setError("mbno.", "Please enter mob number");
+        return false;
+    }
+
+   
+
+    if (mob_no.length<10) {
+        
+        setError("mbno.", "Please enter right mob number");
+        return false;
+    }
+
+    if (mob_no.length==10) {
+        
+        setError("mbno.", "");
+        
+    }
+ 
+ 
+    // var pswd=document.forms['myForm']['pas   sword'].value;
+    // if (pwsd.match(/^(?=[^A-Z]*[A-Z])(?=[^!"#$%&'()*+,-.:;<=>?@[\]^_`{|}~]*[!"#$%&'()*+,-.:;<=>?@[\]^_`{|}~])(?=\D*\d).{8,}$/)) {
+    //     return true;
+    // } else {
+    //     setError("password", "Please enter a valid passoword");
+    //     return false;
+    // }
+
+    return return_val;
+
+
+}
+</script>
+</html>

@@ -1,0 +1,141 @@
+html {
+    --color-grey-100: rgb(244, 242, 234);
+    --color-grey-300: rgb(154, 153, 151);
+    --color-grey-700: rgb(82, 82, 82);
+    --color-grey-900: rgb(50, 49, 43);
+  
+    --color-primary-300: rgb(255, 248, 168);
+    --color-primary-700: rgb(255, 243, 113);
+    --color-primary-900: rgb(255, 234, 8);
+  }
+  
+  body {
+    background-image: url(images/daisy-background.jpeg);
+    background-position: center;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    color: var(--color-grey-900);
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 4rem 0 2rem 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+  
+  form {
+    width: 30rem;
+    margin: 3rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px var(--color-grey-300);
+  }
+  
+  h2 {
+    margin: 0 0 2rem 0;
+    font-size: 2rem;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+    display: block;
+    color: var(--color-grey-700);
+  }
+  
+  .section-2 {
+    margin-top: 2rem;
+  }
+  
+  input,
+  textarea,
+  select {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    font: inherit;
+    border: 1px solid rgb(184, 184, 184);
+    padding: 0.25rem;
+    color: rgb(45, 44, 39);
+    border-radius: 6px;
+    font: inherit;
+  }
+  
+  select {
+    color: var(--color-grey-700);
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  input:focus,
+  textarea:focus,
+  select:focus,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    background-color: var(--color-grey-100);
+    border-color: var(--color-grey-900);
+    outline: none;
+  }
+  
+  input:hover,
+  textarea:hover {
+    border-color: var(--color-grey-900);
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .form-control-inline {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-control-inline input {
+    width: auto;
+    margin: 0 0.5rem 0 0;
+  }
+  
+  .form-control-inline label {
+    margin: 0;
+  }
+  
+  .agree-to-terms {
+    margin-top: 2rem;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: end;
+    margin-top: 1rem;
+  }
+  
+  button {
+    display: inline-block;
+    font: inherit;
+    background-color: var(--color-primary-700);
+    color: var(--color-grey-900);
+    border: 1px solid var(--color-grey-900);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--color-primary-900);
+  }
+  
+  #clear {
+    background-color: white;
+    color: var(--color-grey-900);
+    margin-right: 0.5rem;
+  }
+  
+  #clear:hover {
+    background-color: var(--color-grey-100);
+  }

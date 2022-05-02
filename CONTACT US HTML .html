@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cstyles.css" />
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="/donation.png">
+  </head>
+  <!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url("https://i0.wp.com/calmatters.org/wp-content/uploads/2020/07/organic-waste.jpg?fit=2121%2C1414&ssl=1");
+}
+</style>
+</head>
+</html>
+  <body>
+    <header>
+      <h1>Contact us</h1>
+    </header>
+    <body>
+      <form action="index.html" method="GET">
+        <section">
+          <h2>How can we help you?</h2>
+          <label for="user-name">Your name</label>
+          <input type="text" name="user-name" id="user-name" required />
+          <label for="user-email">Email address</label>
+          <input type="email" name="user-email" id="user-email" required />
+          <label for="user-phone">Phone number</label>
+          <input type="tel" name="user-number" id="user-number" minlength="10" required />
+          <label for="user-message">Your message</label>
+          <textarea name="user-message" id="user-message" rows="6" required></textarea>
+          <label for="find-us">How did you find us?</label>
+          <select name="find-us" id="find-us" required>
+            <option>Web search</option>
+            <option>Word of mouth</option>
+            <option>Social media</option>
+            <option>Other</option>
+          </select>
+        </section>
+        <section class="section-2">
+          <label for="reply">How should we reply?</label>
+          <div class="reply">
+            <div class="form-control-inline">
+              <input type="radio" name="reply" id="call" required />
+              <label for="call">Call me</label>
+            </div>
+            <div class="form-control-inline">
+              <input type="radio" name="reply" id="text" required />
+              <label for="text">Text</label>
+            </div>
+            <div class="form-control-inline">
+              <input type="radio" name="reply" id="no-reply" required />
+              <label for="no-reply">Don't reply, I'm just looking</label>
+            </div>
+            </div>
+            <div class="form-control-inline agree-to-terms">
+              <input type="checkbox" id="agree-terms" name="agree-to-terms" required />
+              <label for="agree-terms">Agree to terms?</label>
+            </div>
+          </div>
+        <div class="buttons">
+          <button type="reset" id="clear">Clear</button>
+          <button onclick="showAlert()" id="submit">Submit</button>
+        </div>
+      </section>
+    </form>
+    </body>
+    <script>
+      function showAlert() {
+        alert ("Your response is recorded\nWe will contact you soon");
+      }
+      </script>
+</html
